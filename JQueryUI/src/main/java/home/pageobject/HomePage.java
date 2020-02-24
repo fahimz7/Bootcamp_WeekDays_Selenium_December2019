@@ -1,4 +1,6 @@
 package home.pageobject;
 
-public class HomePage {
+import home.webelement.WebElementHomePage;
+
+public class HomePage extends WebElementHomePage {
 }
