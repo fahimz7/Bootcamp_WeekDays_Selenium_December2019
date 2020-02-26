@@ -580,9 +580,11 @@ public class WebAPI {
         Scroll.executeScript("window.scrollBy(0,"+scroll+")");
     }
     public void xPathClick (String locator){
+
         driver.findElement(By.xpath(locator)).click();
     }
     public void xPathSendKey(String locator, String value){
+
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
 
@@ -592,6 +594,15 @@ public class WebAPI {
     public String getTextByWebElement(WebElement webElement) {
         String text = webElement.getText();
         return text;
+    }
+    //Drag And Drop;
+    public void dragAndDrop(String dragFrom,String dropTo){
+        WebElement From=driver.findElement(By.xpath(dragFrom));
+        WebElement To =driver.findElement(By.xpath(dropTo));
+        Actions act = new Actions(driver);
+        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+        act.dragAndDrop(From,To).build().perform();
+
     }
 
 
