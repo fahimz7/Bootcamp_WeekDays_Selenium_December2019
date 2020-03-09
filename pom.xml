@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>JQueryUI</module>
         <module>Delta</module>
     </modules>
 
