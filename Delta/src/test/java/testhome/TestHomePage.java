@@ -17,6 +17,7 @@ public class TestHomePage extends HomePage {
 
 
     public void getInItElements() {
+
         PageFactory.initElements(driver, HomePage.class);
     }
 

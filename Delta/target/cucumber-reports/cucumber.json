@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Delta homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 57803000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "On Delta homepage",
+            "match": {
+              "location": "stepdefinitions.HomePageStepDefinition.on_Delta_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T21:48:54.720Z",
+        "line": 5,
+        "name": "Testing travel info",
+        "description": "",
+        "id": "delta;testing-travel-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy25.click(Unknown Source)\n\tat stepdefinitions.HomePageStepDefinition.i_hover_on_travel_info(HomePageStepDefinition.java:21)\n\tat ✽.I hover on travel info(file:///Users/Fahim/Desktop/Demo/Bootcamp_WeekDays_Selenium_December2019/Delta/src/test/java/feature/DeltaHomePage.feature:6)\n",
+              "duration": 2026000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I hover on travel info",
+            "match": {
+              "location": "stepdefinitions.HomePageStepDefinition.i_hover_on_travel_info()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I click on board experience",
+            "match": {
+              "location": "stepdefinitions.HomePageStepDefinition.i_click_on_board_experience()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Delta",
+    "description": "",
+    "id": "delta",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/DeltaHomePage.feature",
+    "tags": []
+  }
+]
